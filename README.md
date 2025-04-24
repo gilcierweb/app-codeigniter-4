@@ -126,7 +126,9 @@ postman-insomnia.json
 ```
 ### API with Swagger UI
 ```text
-http://0.0.0.0:8080/swagger
+http://localhost:8080/api/docs
+or
+http://0.0.0.0:8080/api/docs
 ```
 
 ### Todo
