@@ -19,6 +19,9 @@ use CodeIgniter\Config\BaseService;
  */
 class Services extends BaseService
 {
+    public $aliases = [
+        'cors' => \App\Filters\CorsFilter::class,
+    ];
     /*
      * public static function example($getShared = true)
      * {

@@ -1,0 +1,50 @@
+# Comments start with a #
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Node.js specific files
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Ignore Python specific files
+__pycache__
+*.pyc
+*.pyd
+.python-version
+venv
+env
+
+# Ignore Composer specific files
+vendor/
+
+# Ignore CodeIgniter 4 writable directory (contains logs, cache, etc.)
+writable/
+
+# Ignore CodeIgniter 4 tests directory
+tests/
+
+# Ignore CodeIgniter 4 development files
+.env
+phpunit.xml.dist
+
+# Ignore Docker related files (to avoid infinite loops in some scenarios)
+.dockerignore
+docker-compose.yml
+Dockerfile*
+
+# Ignore IDE specific files and directories
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+temp/

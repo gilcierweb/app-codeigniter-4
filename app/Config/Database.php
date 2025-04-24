@@ -26,7 +26,8 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => 'localhost',
+//        'hostname'     => 'localhost', // php local
+        'hostname'     => 'db', // run with docker compose
         'username'     => 'root',
         'password'     => 'secret',
         'database'     => 'app_codeigniter_ci4',

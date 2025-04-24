@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="author" content="GilcierWeb - Web Developer - gilcierweb@gmail.com - gilcier06@yahoo.com.br - Sites, Sistemas para Web, E-commerce, Manutenção de Sites, Apps Mobile. gilcierweb.com.br" />
 
-	<title>App CodeIgniter 3</title>
+	<title>App CodeIgniter 4</title>
 
 	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -103,6 +103,9 @@
 								href="api/users">
 								Conheça
 							</a>
+                            <a class="btn-primary-orange" href="api/docs">
+                                Swagger UI API
+                            </a>
 						</div>
 					</div>
 				</div>

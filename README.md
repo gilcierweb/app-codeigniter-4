@@ -83,6 +83,14 @@ http://0.0.0.0:8080/swagger
 ### Run App in Development
 ```shell
 cd app-codeigniter
+php spark serve
+# run http://localhost:8080 or
+
+php spark serve --host 0.0.0.0
+# run http://0.0.0.0:8080 or
+
+php spark serve --host 0.0.0.0 --port 8081
+# run http://0.0.0.0:8081 or
 
 php -S 0.0.0.0:8080
 # run http://localhost:8080
@@ -96,6 +104,17 @@ docker-compose build
 docker-compose up # run http://localhost:8080
  
 docker-compose up --build # run http://localhost:8080
+
+# Optional
+docker-compose ps
+docker-compose stop
+docker-compose down
+docker-compose run --rm app php spark db:create
+docker-compose run --rm app php spark migrate
+docker-compose run --rm app php spark db:seed 
+docker-compose run --rm app php spark db:seed Users
+docker-compose run --rm app php spark db:seed Profiles
+
 ```
 
 ### Migration codeigniter 4

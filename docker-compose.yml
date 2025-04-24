@@ -1,0 +1,61 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile  
+    ports:
+      - 8080:8080
+    stdin_open: true
+    tty: true
+#    command: 'php spark migrate'
+    environment:
+      CI_ENVIRONMENT: development
+    depends_on:
+      - db      
+    volumes:
+      - .:/app 
+    networks:
+      - network-app-ci
+
+#  nginx:
+#    image: nginx:1.27-alpine
+#    container_name: app-nginx
+#    restart: unless-stopped
+#    ports:
+#      - 8181:80
+#    volumes:
+#      - .:/app
+#    depends_on:
+#      - "app"
+#    networks:
+#      - app-ci
+  
+  db:
+    container_name: db-ci
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_ALLOW_EMPTY_PASSWORD: true
+      MYSQL_DATABASE: app_codeigniter_ci4
+      MYSQL_ROOT_USER: root
+      MYSQL_PASSWORD: secret
+#      MYSQL_ROOT_HOST: localhost
+      TZ: America/Sao_Paulo
+      MYSQL_OPTIONAL_FLAGS: "--skip-ssl"
+
+    ports:
+      - 3310:3306
+    networks:
+      - network-app-ci
+    volumes:
+      - db_data:/var/lib/mysql
+#      - ./docker/db:/docker-entrypoint-initdb.d
+  
+volumes:
+  db_data:
+    driver: local
+
+networks:
+  network-app-ci:
+    driver: bridge

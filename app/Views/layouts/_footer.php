@@ -15,7 +15,7 @@
 					Site criado com o Framework <a href="https://CodeIgniter.com" title="CodeIgniter 4" target="_blank" class="link link-primary link-animated">CodeIgniter 4</a>
 				</p>
 				<p class="text-gray-500 dark:text-neutral-500">Page rendered in <strong>{elapsed_time}</strong>
-					seconds. <?php echo (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?>
+					seconds. <?php echo (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>' . esc(\CodeIgniter\CodeIgniter::CI_VERSION) . '</strong>' : '' ?>
 				</p>
                 <div class="environment">
                     <p>Page rendered in {elapsed_time} seconds using {memory_usage} MB of memory.</p>
