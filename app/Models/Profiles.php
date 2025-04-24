@@ -12,7 +12,20 @@ class Profiles extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields = [
+        'user_id',
+        'first_name',
+        'last_name',
+        'website',
+        'instagram',
+        'facebook',
+        'linkedin',
+        'twitter_x',
+        'avatar',
+        'bio',
+        'created_at',
+        'updated_at',
+    ];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

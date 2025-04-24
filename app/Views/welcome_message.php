@@ -86,10 +86,8 @@
 				<div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
 
 					<div class="mx-auto  text-center">
-						<div class=" flex  items-center justify-center flex-col">
-							<img alt="logo" class="mb-10 object-cover object-center rounded"
-								src="public/images/logo.png" />
-                                <?= img(['src'=> 'images/logo.png','alt' =>'logo', 'class' =>'mb-10 object-cover object-center rounded']); ?>
+						<div class=" flex  items-center justify-center flex-col">							
+                            <?= img(['src'=> 'images/logo.png','alt' =>'logo', 'class' =>'mb-10 object-cover object-center rounded']); ?>
 						</div>
 						<h1 class="text-3xl font-extrabold sm:text-5xl">
 							App CodeIgniter 4 API. <br>
@@ -130,8 +128,6 @@
         }
     }
 </script>
-
-<!-- -->
 
 </body>
 </html>
