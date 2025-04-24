@@ -98,14 +98,14 @@ docker-compose up # run http://localhost:8080
 docker-compose up --build # run http://localhost:8080
 ```
 
-### Enable migration codeigniter and run migrate custom cli by gilcierweb 
+### Migration codeigniter 4
 
 ```shell
-# php migration.php create_users
-# php migration.php create_profiles
+# php spark make:migration create_users_table
+# php spark make:migration create_profiles_table
 
 # run migrations
-php index.php migrate
+php spark migrate
 
 ```
 
@@ -113,19 +113,10 @@ php index.php migrate
 
 ```shell
 # run seed
+php spark make:seeder
 
-php index.php seeder users
-php index.php seeder profiles
-php index.php seeder all
-
-# Para gerar um número específico de usuários (ex: 10)
-php index.php seeder users 10
-
-# Para gerar um número específico de perfis (ex: 20)
-php index.php seeder profiles 20
-
-# Para gerar um número específico de ambos
-php index.php seeder all 15
+#run db:seed like ruby on rails
+php spark db:seed 
 
 ```
 
@@ -140,7 +131,7 @@ http://0.0.0.0:8080/swagger
 
 ### Todo
 
-* [X] Swagger UI
+* [ ] Swagger UI
 * [ ] JWT
 * [ ] OAuth 2.0
 * [ ] Change password
