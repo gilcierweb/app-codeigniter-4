@@ -131,7 +131,7 @@ http://0.0.0.0:8080/swagger
 
 ### Todo
 
-* [ ] Swagger UI
+* [X] Swagger UI
 * [ ] JWT
 * [ ] OAuth 2.0
 * [ ] Change password

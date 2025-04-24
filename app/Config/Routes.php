@@ -17,3 +17,5 @@ $routes->group('api', ['namespace' => 'App\Controllers\Api'], function ($routes)
     $routes->resource('users');
     $routes->resource('profiles');
 });
+
+$routes->get('/api/docs', 'SwaggerUIController::index');
