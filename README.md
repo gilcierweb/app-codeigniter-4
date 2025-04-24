@@ -78,7 +78,7 @@ http://0.0.0.0:8080/swagger
 
 ### Skills
 - [PHP](https://www.php.net/)
-- [Codeigniter 3](https://codeigniter.com/)
+- [Codeigniter 4](https://codeigniter.com/)
 
 ### Run App in Development
 ```shell
