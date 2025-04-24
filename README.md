@@ -73,7 +73,7 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 
 ```shell
 # swagger ui
-http://0.0.0.0:9100/swagger
+http://0.0.0.0:8080/swagger
 ```
 
 ### Skills
@@ -84,8 +84,8 @@ http://0.0.0.0:9100/swagger
 ```shell
 cd app-codeigniter
 
-php -S 0.0.0.0:9100
-# run http://localhost:9100
+php -S 0.0.0.0:8080
+# run http://localhost:8080
 
 ```
 
@@ -93,9 +93,9 @@ php -S 0.0.0.0:9100
 
 ```shell
 docker-compose build
-docker-compose up # run http://localhost:9100
+docker-compose up # run http://localhost:8080
  
-docker-compose up --build # run http://localhost:9100
+docker-compose up --build # run http://localhost:8080
 ```
 
 ### Enable migration codeigniter and run migrate custom cli by gilcierweb 
@@ -135,7 +135,7 @@ postman-insomnia.json
 ```
 ### API with Swagger UI
 ```text
-http://0.0.0.0:9100/swagger
+http://0.0.0.0:8080/swagger
 ```
 
 ### Todo
